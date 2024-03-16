@@ -73,4 +73,4 @@ if pythonBool == True :
 else: 
     print("python no esta dentro del texto") 
 
-    
+
