@@ -29,3 +29,30 @@ diccionarioDinosaurios = {
 }
 
 imprimir(diccionarioDinosaurios)
+
+#calcular sueldo de empleados dependiendo de unas caracteristicas
+
+def calculoSueldo(empleado):
+    nombre = empleado["nombre"]
+    tipo = empleado["tipo"]
+    if tipo == "D":
+        sueldo = 2000000
+    elif tipo == "A":
+        sueldo = 1000000
+    else:
+        sueldo = "NA"
+    sueldoEmpleado = {
+        "nombre":nombre,
+        "sueldo":sueldo,
+        "tipo": tipo
+    }
+    return sueldoEmpleado
+
+
+empleado = {
+    "idEmpleado": "187654",
+    "nombre": "Juan Perez",
+    "tipo": "D"
+}
+
+print(calculoSueldo(empleado))
